@@ -115,7 +115,7 @@ function updateCartTable() {
         // Display a success message
         console.log('User signed up successfully!');
     });
-} 
+
 
 
 
