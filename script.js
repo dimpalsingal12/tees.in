@@ -91,39 +91,34 @@ function updateCartTable() {
 }
 
 
-signUpFormBtn.addEventListener('submit', function(event) {
-    // Prevent the default form submission behavior
-    event.preventDefault();
-
-    // Get the user input values
-    var name = document.getElementById('username').value;
-    var email = document.getElementById('email').value;
-    var password = document.getElementById('password').value;
-
-    // Create a new user object
-    var user = {
-        username: username,
-        email: email,
-        password: password
-    };
-
-    // Add the new user to the users array
-    var users = JSON.parse(localStorage.getItem('users')) || [];
-    users.push(user);
-
-    // Store the users array in local storage
-    localStorage.setItem('users', JSON.stringify(users));
-
-    // Clear the form fields
-    document.getElementById('username').value = '';
-    document.getElementById('email').value = '';
-    document.getElementById('password').value = '';
-
-    // Display a success message
-    console.log('User signed up successfully!');
-});
- else {
-    console.error('signUpForm element not found!');
+if (signUpForm) {
+    signUpForm.addEventListener('submit', function(event) {
+        // Prevent the default form submission behavior
+        event.preventDefault();
+        // Get the user input values
+        var username = document.getElementById('username').value;
+        var email = document.getElementById('email').value;
+        var password = document.getElementById('password').value;
+        // Create a new user object
+        var user = {
+            username: username,
+            email: email,
+            password: password
+        };
+        // Add the new user to the users array
+        var users = JSON.parse(localStorage.getItem('users')) || [];
+        users.push(user);
+        // Store the users array in local storage
+        localStorage.setItem('users', JSON.stringify(users));
+        // Clear the form fields
+        document.getElementById('username').value = '';
+        document.getElementById('email').value = '';
+        document.getElementById('password').value = '';
+        // Display a success message
+        console.log('User signed up successfully!');
+    });
+} else {
+    console.error('signUpForm element not found!');
 }
 
 
