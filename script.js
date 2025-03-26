@@ -52,13 +52,7 @@ accountBtn.addEventListener('click', function() {
     document.getElementById('sign-up-page').classList.remove('active');
 });
 
-signUpBtn.addEventListener('click', function() {
-    document.getElementById('sign-up-page').classList.add('active');
-    document.getElementById('home-page').classList.remove('active');
-    document.getElementById('explore-page').classList.remove('active');
-    document.getElementById('cart-page').classList.remove('active');
-    document.getElementById('account-page').classList.remove('active');
-});
+
 
 // Add event listeners to add to cart buttons
 addToCartBtns.forEach(function(btn) {
@@ -97,7 +91,7 @@ function updateCartTable() {
 }
 
 
-signUpForm.addEventListener('submit', function(event) {
+signUpFormBtn.addEventListener('submit', function(event) {
     // Prevent the default form submission behavior
     event.preventDefault();
 
