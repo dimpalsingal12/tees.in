@@ -122,7 +122,7 @@ signUpFormBtn.addEventListener('submit', function(event) {
     // Display a success message
     console.log('User signed up successfully!');
 });
-} else {
+ else {
     console.error('signUpForm element not found!');
 }
 
