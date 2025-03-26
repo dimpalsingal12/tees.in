@@ -129,13 +129,6 @@ signUpForm.addEventListener('submit', function(event) {
     console.log('User signed up successfully!');
 });
 
-if (signUpForm) {
-    signUpForm.addEventListener('submit', function(event) {
-        // Event listener code here
-    });
-} else {
-    console.error('signUpForm element not found!');
-}
 
 
 
