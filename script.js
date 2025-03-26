@@ -5,7 +5,7 @@
 
 // Get the HTML elements
 var homeBtn = document.getElementById('home-btn');
-var exploreBtn = document.getElementById('explore-nav-btn');
+var exploreBtn = document.getElementById('explore-btn');
 var cartBtn = document.getElementById('cart-btn');
 var accountBtn = document.getElementById('account-btn');
 var signUpBtn = document.getElementById('sign-up-btn');
