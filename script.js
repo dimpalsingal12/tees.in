@@ -94,7 +94,7 @@ function updateCartTable() {
     });
 
 
-
+}
 
 
 signUpForm.addEventListener('submit', function(event) {
@@ -129,6 +129,13 @@ signUpForm.addEventListener('submit', function(event) {
     console.log('User signed up successfully!');
 });
 
+if (signUpForm) {
+    signUpForm.addEventListener('submit', function(event) {
+        // Event listener code here
+    });
+} else {
+    console.error('signUpForm element not found!');
+}
 
 
 
@@ -145,4 +152,4 @@ checkoutBtn.addEventListener('click', function() {
         listItem.textContent = 'Order #' + order.orderId + ': ' + order.date;
         orderHistoryList.appendChild(listItem);
     });
-}
+
