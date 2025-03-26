@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T-Shirt Brand</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Logo">
+    </header>
+    <main>
+        <!-- Home page content -->
+        <section id="home-page" class="active">
+            <h1>Welcome to T-Shirt Brand!</h1>
+            <p>Explore our collection of unique and stylish T-shirts.</p>
+            
+        </section>
+        <!-- Explore page content -->
+        <section id="explore-page">
+            <h1>Explore Our Collection</h1>
+            <div class="product-grid">
+                <div class="product">
+                    <img src="C:\Users\Dimpal Singal\OneDrive\dimpal\tshirt brand\product.1.jpeg" alt="Product 1">
+                    <h2>Prodct 1</h2>
+                    <p>200</p>
+                    <button class="add-to-cart-btn" data-product="Product 1" data-price="200">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="C:\Users\Dimpal Singal\OneDrive\dimpal\tshirt brand\procduct2.jpeg" alt="Product 2">
+                    <h2>Product 2</h2>
+                    
+                    <p2>200</p2>
+                    <button class="add-to-cart-btn" data-product="Product 2" data-price="200">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="C:\Users\Dimpal Singal\OneDrive\dimpal\tshirt brand\product3.jpg" alt="Product 3">
+                    <h2>Product 3</h2>
+                    <p>200</p>
+                    <button class="add-to-cart-btn" data-product="Product 3" data-price="200">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+        <!-- Cart page content -->
+        <section id="cart-page">
+            <h1>View Cart</h1>
+            <table id="cart-table">
+                <tr>
+                    <th>Product</th>
+                    <th>Price</th>
+                    <th>Quantity</th><br>
+                    <th>Total</th>
+                </tr>
+            </table>
+            <button id="checkout-btn">Checkout</button>
+        </section>
+        <!-- Account page content -->
+        <section id="account-page">
+            <h1>Your Account</h1>
+            <p>Welcome, <span id="username"></span>!</p>
+            <p>Your order history:</p>
+            <ul id="order-history"></ul>
+        </section>
+        
+        <!-- Sign up page content -->
+        <section id="sign-up-page">
+            <h1>Sign Up</h1>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name"><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br><br>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password"><br><br>
+                <button id="sign-up-btn">Sign Up</button>
+            </form>
+        </section>
+    </main>
+    <nav class="bottom-nav">
+        <ul>
+            <li><button id="home-btn"><i class="fa fa-home"></i></button></li>
+            <li><button id="explore-btn"><i class="fa fa-search"></i></button></li>
+            <li><button id="cart-btn"><i class="fa fa-shopping-cart"></i></button></li>
+            <li><button id="account-btn"><i class="fa fa-user"></i></button></li>
+        </ul>
+    </nav>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
