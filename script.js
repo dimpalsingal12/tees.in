@@ -100,7 +100,7 @@ signUpForm.addEventListener('submit', function(event) {
     event.preventDefault();
 
     // Get the user input values
-    var username = document.getElementById('username').value;
+    var name = document.getElementById('name').value;
     var email = document.getElementById('email').value;
     var password = document.getElementById('password').value;
 
@@ -109,13 +109,16 @@ signUpForm.addEventListener('submit', function(event) {
     localStorage.setItem('orderHistory', JSON.stringify([])); // Initialize order history as an empty array
 });
 
-// Display username and order history
-var username = localStorage.getItem('username');
-var orderHistory = JSON.parse(localStorage.getItem('orderHistory'));
 
-usernameSpan.textContent = username;
 
-if (orderHistory) {
+
+
+// Add event listener for checkout button
+checkoutBtn.addEventListener('click', function() {
+    // Handle checkout functionality here
+    console.log('Checkout button clicked!');
+});
+
     orderHistory.forEach(function(order) {
         var listItem = document.createElement('LI');
         listItem.textContent = 'Order #' + order.orderId + ': ' + order.date;
