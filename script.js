@@ -90,9 +90,7 @@ function updateCartTable() {
 
 }
 
-
-if (signUpForm) {
-    signUpForm.addEventListener('submit', function(event) {
+    signUpFormBtn.addEventListener('submit', function(event) {
         // Prevent the default form submission behavior
         event.preventDefault();
         // Get the user input values
@@ -117,9 +115,7 @@ if (signUpForm) {
         // Display a success message
         console.log('User signed up successfully!');
     });
-} else {
-    console.error('signUpForm element not found!');
-}
+} 
 
 
 
