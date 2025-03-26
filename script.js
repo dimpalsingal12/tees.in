@@ -92,7 +92,7 @@ function updateCartTable() {
         quantityCell.textContent = item.quantity;
         totalCell.textContent = item.price * item.quantity;
     });
-}
+
 
 
 
